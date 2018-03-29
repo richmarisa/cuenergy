@@ -1,0 +1,27 @@
+name: Cornell Energy Systems Institute
+description: This is child of the CWD Cornell Base theme.
+type: theme
+base theme: cwd_base_bootstrap
+core: 8.x
+
+libraries:
+  - cuenergy/global-styling
+
+ckeditor_stylesheets:
+  - css/cke.css
+
+regions:
+  campaign: 'Header image'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (collapsible)'
+  header: 'Top bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  hidden: 'Hidden region for referenced blocks'

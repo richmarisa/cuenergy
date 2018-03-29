@@ -1,0 +1,7 @@
+global-styling:
+  css:
+    theme:
+      css/cuenergy.css: {}
+      css/cwd_slider.css: {}
+  js:
+      js/cuenergy.js: {}

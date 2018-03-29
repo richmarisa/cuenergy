@@ -1,0 +1,287 @@
+
+/***** Front page *****/
+.path-frontpage .alert {
+	position: absolute;
+    top: 199px;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    border-radius: 0;
+}
+.path-frontpage #main > .row,
+.path-frontpage #main > .row > section {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/***** Header *****/
+#cu-header .cu-brand {
+    height: 48px;
+}
+
+/***** Navigation *****/
+.region-navigation-collapsible {
+    position: relative;
+    overflow: hidden;
+}
+.region-navigation-collapsible > nav {
+    position: absolute;
+    width: 68.66667%;
+    bottom: -4px;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navbar {
+    position: absolute;
+    background-color: rgba(248, 248, 248, .8);
+	padding: 52px 0 30px;
+    z-index: 9;
+	border-radius: 0;
+    max-width: none;
+    width: 100%;
+}
+.path-frontpage #navbar {
+    position: absolute;
+    background-color: rgba(248, 248, 248, .8);
+	padding: 52px 0 30px;
+    z-index: 9;
+	border-radius: 0;
+    max-width: none;
+    width: 100%;
+}
+.path-user #navbar {
+    position: relative;
+}
+#navbar #navbar-collapse {
+    max-width: 1280px;
+	margin: 0 auto;
+	padding: 0;
+}
+#navbar .logo {
+    width: 250px;
+    height: 100px;
+	background: url(../images/logo.png) left top no-repeat;
+	background-size: cover;
+}
+#navbar .logo img {
+    width: 250px;
+	display: none;
+}
+.navbar-nav > li:not(:first-child) {
+    margin-left: 43px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #1f4487;
+    font-size: 1.38em;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #2b7545;
+    background-color: transparent;
+}
+#navbar > .container-fluid {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+#navbar > .container-fluid > #navbar-collapse {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+#navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+}
+#navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible > .logo {
+    width: 37%;
+    height: 100px;
+    background: url(../images/logo.png) 70% top no-repeat;
+    background-size: 36%;
+}
+#navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible > nav {
+    width: 63%;
+}
+
+/***** Breadcrumbs *****/
+#breadcrumbs {
+    height: 45px;
+    background: #205050;
+}
+#breadcrumbs .breadcrumb {
+    border-radius: 0;
+    margin-top: 0;
+    padding-top: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100%;
+    background: #2b7545;
+}
+.breadcrumb > li + li:before {
+    content: "> ";
+	padding-right: 40px;
+}
+#breadcrumbs .breadcrumb li {
+    margin-bottom: 0;
+}
+#breadcrumbs .breadcrumb li.active {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #b4cebd;
+}
+#breadcrumbs .breadcrumb li a {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #b4cebd;
+    text-decoration: none;
+    padding: 11px 0;
+    display: inline-block;
+}
+#breadcrumbs .col-sm-4 {
+    width: 36%;
+}
+#breadcrumbs .col-sm-8 {
+    width: 64%;
+	padding-left: 45px;
+}
+
+/***** Tabs *****/
+nav.tabs {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+/***** Footer *****/
+#footer-first * {
+	color: #fff;
+	text-align: right;
+}
+#footer-first {
+	background: #b31b1b;
+	padding: 40px 15px;
+}
+#footer-second {
+	background: #7a1212;
+	padding: 40px 15px;
+}
+#footer-second * {
+	color: #fff;
+}
+
+/***** Sidebar *****/
+#main .region-sidebar-first #block-mainnavigation .nav li a {
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #333;
+}
+#main .region-sidebar-first {
+    overflow: hidden;
+    width: 345px;
+    float: right;
+}
+/***** Typography *****/
+body #main section {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+h1, .h1 {
+    font-size: 31px;
+}
+
+/***** Miscellaneous *****/
+#main {
+	max-width: 1280px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+body:not(.path-frontpage) #main {
+    background: #f5f7fa;
+	width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin: 0;
+}
+body:not(.path-frontpage) #main > .row {
+    width: 100%;
+}
+body:not(.path-frontpage) #main > .row aside {
+    margin-left: 15px;
+	padding: 46px 47px;
+	width: 36%;
+}
+body:not(.path-frontpage) #main > .row > section {
+    width: calc(64% - 15px) !important;
+    background: #fff;
+    padding: 56px 47px;
+}
+#main > .row > section > .region-content > article > .content > .field--items > .field--item:not(:first-child) {
+    padding-left: 60px;
+    padding-right: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+body.path-frontpage #main > .row > section > .region-content > article > .content > .field--items > .field--item:not(:first-child) {
+    padding: 54px 0 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main > .row > section > div[role="heading"] {
+	padding-left: 0;
+}
+body.full-width:not(.path-frontpage) #main > .row > section {
+	width: 100% !important;
+}
+body.full-width:not(.path-frontpage) nav.tabs .tabs-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+body.full-width:not(.path-frontpage) nav.tabs {
+	width: 100%;
+}
+.clear-left {
+	clear: left;
+}
+.no-header-image {
+	background-image: url('/sites/default/files/2018-03/Hanrath_PV_4.jpg') !important;
+}
+.dialog-off-canvas-main-canvas {
+    background: #f5f7fa;
+}
+.caption-inner {
+    display: none;
+}
+
+
+/***** Responsive *****/
+@media (min-width: 767px) {
+	body.path-frontpage #main {
+		max-width: none;
+	}
+	body:not(.path-frontpage) #main > .row > div[role="heading"] {
+		width: 66.66667%;
+		float: right;
+	}
+	body:not(.path-frontpage) #main > .row > section {
+		width: 66.66667%;
+		float: right;
+	}
+}

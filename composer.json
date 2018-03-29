@@ -1,0 +1,15 @@
+{
+    "name": "CU-CommunityApps/CD-cuenergy_theme",
+    "description": "A child theme of the cwd_base_bootstrap theme for the Energy Systems Institute website; from Cornell University CIT-CD.",
+    "type": "drupal-8-custom-child-theme",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "David Cutri (dc774)",
+            "homepage": "https://github.com/dc774",
+            "role": "Maintainer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
