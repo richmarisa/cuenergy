@@ -132,7 +132,7 @@ body > header .slider-container {
   position: absolute;
   top: 24%;
   left: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: none;
   padding: 20px;
 }
 
@@ -174,11 +174,14 @@ body > header .slider-container {
 }
 
 main .slider-caption .caption-inner, #main .slider-caption .caption-inner {
-  left: 5%;
+  left: unset !important;
+  right: 5% !important;
+  top: unset !important;
+  bottom: 22% !important;
 }
 
 main .slider-caption .campaign-nav, #main .slider-caption .campaign-nav {
-  right: 5%;
+  right: 46.4%;
 }
 
 main .slider-caption .campaign-nav.left, #main .slider-caption .campaign-nav.left {
@@ -205,8 +208,9 @@ main .slider-caption .campaign-nav.left, #main .slider-caption .campaign-nav.lef
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-main .slider-caption h2, #main .slider-caption h2 {
-  font-size: 28px;
+main .slider-caption h2, 
+#main .slider-caption h2 {
+  font-size: 31px;
   color: #fff;
 }
 
@@ -242,13 +246,7 @@ main .slider-caption h2, #main .slider-caption h2 {
 
   .slider-caption .caption-inner {
     background: none;
-    top: 5% !important;
-    left: 4% !important;
     padding: 0;
-  }
-
-  main .slider-caption .caption-inner, #main .slider-caption .caption-inner {
-    top: 4% !important;
   }
 
   .slider-caption h2, main .slider-caption h2 {
@@ -374,12 +372,12 @@ main .slider-caption h2, #main .slider-caption h2 {
   height: 1em;
   line-height: 1em;
   background: #000;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(204, 204, 204, .7);
   box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
 }
 
 .slider-container .campaign-nav.no-numbers a:hover .dot, .slider-container .campaign-nav.no-numbers a:focus .dot {
-  background: rgba(0, 0, 0, 0.7);
+  background: #ffffff;
 }
 
 .slider-container .campaign-nav .active .hidden:before {

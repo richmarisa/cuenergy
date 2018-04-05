@@ -2,7 +2,7 @@
 /***** Front page *****/
 .path-frontpage .alert {
 	position: absolute;
-    top: 199px;
+    top: 8vw;
     left: 0;
     z-index: 9;
     width: 100%;
@@ -19,25 +19,24 @@
 /***** Header *****/
 #cu-header .cu-brand {
     height: 48px;
+	padding-left: 15px !important;
+    padding-right: 15px !important;
 }
 
 /***** Navigation *****/
 .region-navigation-collapsible {
-    position: relative;
-    overflow: hidden;
+    height: 100%;
 }
 .region-navigation-collapsible > nav {
     position: absolute;
-    width: 68.66667%;
-    bottom: -4px;
-    right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    bottom: 7px;
+    right: 60px;
 }
 #navbar {
     position: absolute;
     background-color: rgba(248, 248, 248, .8);
-	padding: 52px 0 30px;
+	padding: 0;
+    margin: 0;
     z-index: 9;
 	border-radius: 0;
     max-width: none;
@@ -46,7 +45,8 @@
 .path-frontpage #navbar {
     position: absolute;
     background-color: rgba(248, 248, 248, .8);
-	padding: 52px 0 30px;
+	padding: 0;
+    margin: 0;
     z-index: 9;
 	border-radius: 0;
     max-width: none;
@@ -56,15 +56,18 @@
     position: relative;
 }
 #navbar #navbar-collapse {
-    max-width: 1280px;
+    max-width: 1400px;
+	height: 8vw!important;
+	position: relative;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 15px;
 }
 #navbar .logo {
     width: 250px;
-    height: 100px;
-	background: url(../images/logo.png) left top no-repeat;
-	background-size: cover;
+    height: 77.6%;
+    margin: 1.2% 0;
+    background: url(../images/logo.png) left center no-repeat;
+    background-size: contain;
 }
 #navbar .logo img {
     width: 250px;
@@ -90,25 +93,23 @@
     padding-left: 0;
     padding-right: 0;
     margin-right: 0;
-    margin-left: 0;
+    height: 100%!important;
 }
 #navbar > .container-fluid > #navbar-collapse {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
+	height: 100% !important;
 }
 #navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible {
     width: 100%;
+	height: 100%;
     max-width: none;
     padding: 0;
     margin: 0;
 }
 #navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible > .logo {
-    width: 37%;
-    height: 100px;
-    background: url(../images/logo.png) 70% top no-repeat;
-    background-size: 36%;
+    height: 100%;
+	margin: 0;
+    background: url(../images/logo.png) 70% center no-repeat;
+    background-size: contain;
 }
 #navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible > nav {
     width: 63%;
@@ -267,7 +268,16 @@ body.full-width:not(.path-frontpage) nav.tabs {
     background: #f5f7fa;
 }
 .caption-inner {
+
+}
+
+/***** Slider *****/
+.slider-container .campaign-nav.right .next-prev {
     display: none;
+}
+.paragraph.paragraph--type--insert-slideshow > .paragraph__column {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 
@@ -284,4 +294,62 @@ body.full-width:not(.path-frontpage) nav.tabs {
 		width: 66.66667%;
 		float: right;
 	}
+	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column {
+		float: none;
+		max-width: 1400px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
+@media (max-width: 1380px) {
+	.navbar-nav > li:not(:first-child) {
+		margin-left: 34px;
+	}
+	.region-navigation-collapsible > nav {
+		bottom: -5px;
+		font-size: 13px;
+	}
+}
+@media (max-width: 1280px) {
+	#navbar .logo {
+		height: 76.4%;
+		margin: 1.5% 0;
+	}
+	.region-navigation-collapsible > nav {
+		bottom: -13px;
+	}
+}
+@media (max-width: 1225px) {
+	#navbar .logo {
+		height: 49.4%;
+		width: 384px;
+    	margin: 0 0;
+		background: url(../images/logo_horizontal.png) left center no-repeat;
+		background-size: contain;
+	}
+	.region-navigation-collapsible > nav {
+		bottom: -5px;
+		right: unset;
+    	left: 5px;
+	}
+	.navbar-nav > li:not(:first-child) {
+		margin-left: 18px;
+	}
+	#navbar #navbar-collapse {
+		height: 10vw!important;
+	}
+	#main .slider-container {
+		padding: 0 0 43%;
+	}
+}
+@media (max-width: 1000px) {
+	header.navbar#navbar #navbar-collapse {
+		height: 12vw!important;
+	}
+	#main .slider-container {
+		padding: 0 0 45%!important;
+	}
+}
+

@@ -62,7 +62,7 @@
   {% block navbar %}
     {%
       set navbar_classes = [
-        'navbar',
+        'navbar', 'container-fluid',
         theme.settings.navbar_inverse ? 'navbar-inverse' : 'navbar-default',
         theme.settings.navbar_position ? 'navbar-' ~ theme.settings.navbar_position|clean_class : container,
       ]
@@ -86,7 +86,7 @@
 
       {# Navigation (collapsible) #}
       {% if page.navigation_collapsible %}
-        <div id="navbar-collapse" class="navbar-collapse collapse">
+        <div id="navbar-collapse" class="navbar-collapse collapse container-fluid">
           {{ page.navigation_collapsible }}
         </div>
       {% endif %}
