@@ -18,7 +18,16 @@
 .path-frontpage .paragraph.paragraph--type--insert-slideshow > .paragraph__column {
     padding-bottom: 52px;
 } 
-
+.path-frontpage .form-group .more-link {
+    text-transform: uppercase;
+    font-size: 15px;
+    position: absolute;
+    top: -48px;
+    right: 21px;
+}
+.path-frontpage .form-group .more-link a:after {
+    content: '\f30b';
+}
 /***** Header *****/
 #cu-header .cu-brand {
     height: 48px;
@@ -199,6 +208,9 @@ nav.tabs {
     float: right;
 }
 /***** Typography *****/
+a {
+	color: #263c73;
+}
 body #main section {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -329,10 +341,15 @@ body.full-width:not(.path-frontpage) nav.tabs {
     	font-size: 15px;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-title {
-		width: 87.25%;
+
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-title a {
 		color: #263c73;
+	}
+	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .field-name-title a {
+		display: inline-block;
+    	margin: 12px 0 0 0;
+    	color: #263c73;	}
 	}
 }
 @media (max-width: 1380px) {
