@@ -25,14 +25,17 @@
     top: -48px;
     right: 21px;
 }
-.path-frontpage .form-group .more-link a:after {
-    content: '\f30b';
+.path-frontpage .form-group .more-link a {
+	padding-right: 41px;
+	background: url(../images/long-arrow-alt-right.png) right 1px no-repeat;
 }
+
 /***** Header *****/
 #cu-header .cu-brand {
     height: 48px;
 	padding-left: 15px !important;
     padding-right: 15px !important;
+	max-width: 1280px !important;
 }
 
 /***** Navigation *****/
@@ -45,7 +48,6 @@
     right: 60px;
 }
 #navbar {
-    position: absolute;
     background-color: rgba(248, 248, 248, .8);
 	padding: 0;
     margin: 0;
@@ -55,7 +57,6 @@
     width: 100%;
 }
 .path-frontpage #navbar {
-    position: absolute;
     background-color: rgba(248, 248, 248, .8);
 	padding: 0;
     margin: 0;
@@ -69,7 +70,7 @@
 }
 #navbar #navbar-collapse {
     max-width: 1280px;
-	height: 8vw!important;
+	height: 7vw!important;
 	position: relative;
 	margin: 0 auto;
 	padding: 0 15px;

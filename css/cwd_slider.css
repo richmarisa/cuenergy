@@ -112,7 +112,11 @@
 	- Apply .slider-container to the background container and .slider-caption to the caption container to activate the styles below.
    ************************************ */
 .slider-container {
-  padding: 0 0 35%;
+    padding: 0 0 26% !important;
+}
+
+.path-frontpage .slider-container {
+    padding: 0 0 36.101% !important;
 }
 
 body > header .slider-container {
@@ -177,7 +181,7 @@ main .slider-caption .caption-inner, #main .slider-caption .caption-inner {
   left: unset !important;
   right: 5% !important;
   top: unset !important;
-  bottom: 22% !important;
+  bottom: 10% !important;
 }
 
 main .slider-caption .campaign-nav, #main .slider-caption .campaign-nav {
@@ -210,7 +214,7 @@ main .slider-caption .campaign-nav.left, #main .slider-caption .campaign-nav.lef
 
 main .slider-caption h2, 
 #main .slider-caption h2 {
-  font-size: 31px;
+  font-size: 26px;
   color: #fff;
 }
 

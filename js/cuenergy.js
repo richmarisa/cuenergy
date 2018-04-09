@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 	}
 	$(window).resize(resizeChecks);
 	resizeChecks();
-	
+		
 	
 	
 	// Window Load ------------------------------------------------------------
