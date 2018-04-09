@@ -31,6 +31,11 @@
 }
 
 /***** Header *****/
+#navbar {
+	background-image: url(../images/the_world_at_night-white.png);
+	background-repeat: no-repeat;
+    background-position: right top;
+}
 #cu-header .cu-brand {
     height: 48px;
 	padding-left: 15px !important;
