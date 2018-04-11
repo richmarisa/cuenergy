@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 	
 	
 	// Window Load ------------------------------------------------------------
-	$(window).load(function() {
+	$(window).on("load", function() {
 		
 		
 	});
