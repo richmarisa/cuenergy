@@ -43,10 +43,10 @@
     height: 100%;
 }
 .region-navigation-collapsible > nav {
-    position: absolute;
-    bottom: 7px;
-    right: 60px;
+    top: 70px;
+    float: left;
 }
+
 #navbar {
     background-color: rgba(248, 248, 248, .8);
 	padding: 0;
@@ -91,7 +91,7 @@
 }
 .navbar-default .navbar-nav > li > a {
     color: #1f4487;
-    font-size: 1.38em;
+    font-size: 1em;
     text-transform: uppercase;
 }
 .navbar-default .navbar-nav > .active > a, 
@@ -212,18 +212,31 @@ nav.tabs {
 a {
 	color: #263c73;
 }
+html,
+body,
+p,
 body #main section {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 19px;
 }
 h1, .h1 {
-    font-size: 31px;
+    color: #222222;
+    font-size: 34px;
+}
+h2, .h2 {
+    color: #222222;
+    font-size: 29px;
 }
 main h2, #main h2 {
     color: #222222;
-	padding-left: 15px;
 }
-
+.path-frontpage main h2,
+.path-frontpage #main h2 {
+	padding-left: 6px;
+}
+.path-frontpage main .block-views-blockfeatured-faculty-member-block-1 > h2,
+.path-frontpage #main .block-views-blockfeatured-faculty-member-block-1 > h2 {
+	padding-left: 0;
+}
 /***** Miscellaneous *****/
 #main {
 	max-width: 1280px;
@@ -300,13 +313,13 @@ body.full-width:not(.path-frontpage) nav.tabs {
 	padding-right: 0;
 }
 
-
 /***** Responsive *****/
-@media (min-width: 992px)
-.container-fluid {
-    max-width: 1280px;
+@media (min-width: 992px) {
+	.container-fluid {
+		max-width: 1280px;
+	}
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 	body.path-frontpage #main {
 		max-width: none;
 	}
@@ -352,6 +365,9 @@ body.full-width:not(.path-frontpage) nav.tabs {
     	margin: 12px 0 0 0;
     	color: #263c73;	}
 	}
+	.navbar-nav > li > a {
+		padding-bottom: 17px;
+	}
 }
 @media (max-width: 1380px) {
 	.navbar-nav > li:not(:first-child) {
@@ -373,16 +389,21 @@ body.full-width:not(.path-frontpage) nav.tabs {
 }
 @media (max-width: 1225px) {
 	#navbar .logo {
-		height: 49.4%;
-		width: 384px;
-    	margin: 0 0;
-		background: url(../images/logo_horizontal.png) left center no-repeat;
-		background-size: contain;
+		height: 100%;
+		margin: 0;
+		margin-top: -6px;
+		background: url(../images/logo_horizontal_w_icon.png) left center no-repeat;
+		background-size: 77%;
+	}
+	#navbar .logo {
+		height: 100%;
+		margin: 0;
+		margin-top: -6px;
+		background-size: 82%;
 	}
 	.region-navigation-collapsible > nav {
-		bottom: -5px;
-		right: unset;
-    	left: 5px;
+		top: -8px;
+		float: left;
 	}
 	.navbar-nav > li:not(:first-child) {
 		margin-left: 18px;

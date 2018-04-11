@@ -4,6 +4,6 @@ global-styling:
       css/cuenergy.css: {}
       css/cwd_slider.css: {}
   js:
-      js/cuenergy.js: {}      
+      js/cuenergy.js: {}
       js/people.js: {}
       js/jquery.isotope.min.js: {}
