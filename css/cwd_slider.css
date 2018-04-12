@@ -177,11 +177,13 @@ body > header .slider-container {
   left: 0;
 }
 
-main .slider-caption .caption-inner, #main .slider-caption .caption-inner {
+main .slider-caption .caption-inner, 
+#main .slider-caption .caption-inner {
   left: unset !important;
   right: 5% !important;
   top: unset !important;
   bottom: 10% !important;
+  width: 30%;
 }
 
 main .slider-caption .campaign-nav, #main .slider-caption .campaign-nav {
