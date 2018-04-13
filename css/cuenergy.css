@@ -68,7 +68,8 @@
     color: #20417b;
     padding: 0;
     text-align: center;
-    float: left;
+    margin: 0 auto;
+    width: 80%;
 }
 #block-cuenergy-views-block-events-block-1 .event-month {
     text-transform: uppercase;
@@ -190,6 +191,46 @@
 }
 #navbar > .container-fluid > #navbar-collapse > .region-navigation-collapsible > nav {
     width: 63%;
+}
+
+/***** People *****/
+.view-id-people .view-content .views-row {
+    padding-bottom: 10px;
+}
+.people-listing .views-field-field-image {
+    margin-bottom: 40px;
+}
+.people-listing h2 {
+    margin-bottom: 6px;
+}
+
+/***** Discover *****/
+.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col {
+    position: relative;
+}
+.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-title {
+    position: absolute;
+    bottom: 24px;
+    right: 40px;
+}
+.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-title a {
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+}
+.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img {
+   -webkit-backface-visibility: hidden;
+}
+.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img:hover {
+    opacity: .8;
+   -webkit-backface-visibility: hidden;
+}
+.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img:hover {
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  transition: opacity .7s; 
 }
 
 /***** Breadcrumbs *****/
@@ -354,6 +395,9 @@ body.full-width:not(.path-frontpage) nav.tabs .tabs-wrapper {
 }
 body.full-width:not(.path-frontpage) nav.tabs {
 	width: 100%;
+}
+article section {
+    padding: 0 15px 3em 15px;
 }
 .clear-left {
 	clear: left;

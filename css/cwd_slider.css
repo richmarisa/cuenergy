@@ -150,7 +150,6 @@ body > header .slider-container {
 
 .slider-caption .caption-inner.empty a.caption-focus:after {
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -183,7 +182,8 @@ main .slider-caption .caption-inner,
   right: 5% !important;
   top: unset !important;
   bottom: 10% !important;
-  width: 30%;
+  width: 45% !important;
+  text-align: right !important;
 }
 
 main .slider-caption .campaign-nav, #main .slider-caption .campaign-nav {
