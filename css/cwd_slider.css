@@ -184,6 +184,8 @@ main .slider-caption .caption-inner,
   bottom: 10% !important;
   width: 45% !important;
   text-align: right !important;
+  text-transform: none;
+  font-weight: bold;
 }
 
 main .slider-caption .campaign-nav, #main .slider-caption .campaign-nav {
@@ -209,9 +211,10 @@ main .slider-caption .campaign-nav.left, #main .slider-caption .campaign-nav.lef
 
 .slider-caption p {
   font-family: Avenir Next, Proxima Nova, 'proxima-nova', Segoe UI, Helvetica Neue, sans-serif;
-  text-transform: uppercase;
   color: #fff;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  text-transform: none;
+  font-weight: bold;
 }
 
 main .slider-caption h2, 

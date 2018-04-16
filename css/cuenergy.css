@@ -20,6 +20,7 @@
 } 
 .path-frontpage .form-group .more-link {
     text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
     font-size: 15px;
     position: absolute;
     top: -48px;
@@ -50,6 +51,7 @@
 }
 .featured-faculty-name {
     text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
     padding: 30px 15px 6px 15px;
     font-size: 22px;
 }
@@ -73,6 +75,7 @@
 }
 #block-cuenergy-views-block-events-block-1 .event-month {
     text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
     font-size: 22px;
     display: inline-block;
 }
@@ -150,6 +153,9 @@
     width: 250px;
 	display: none;
 }
+.navbar-nav li {
+    font-family: Helvetica, Arial, "sans-serif";
+}
 .navbar-nav > li:not(:first-child) {
     margin-left: 24px;
 }
@@ -158,6 +164,7 @@
     font-size: 1em;
 	font-weight: bold;
     text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
 }
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
@@ -258,10 +265,12 @@
     font-size: 17px;
     text-transform: uppercase;
     color: #b4cebd;
+	font-family: Helvetica, Arial, "sans-serif";
 }
 #breadcrumbs .breadcrumb li a {
     font-size: 17px;
     text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
     color: #b4cebd;
     text-decoration: none;
     padding: 11px 0;
@@ -305,6 +314,7 @@ nav.tabs {
 /***** Sidebar *****/
 #main .region-sidebar-first #block-mainnavigation .nav li a {
 	text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
 	font-size: 17px;
 	color: #333;
 }
@@ -321,7 +331,7 @@ html,
 body,
 p,
 body #main section {
-    font-size: 19px;
+    font-size: 20px;
 }
 h1, .h1 {
     color: #222222;
@@ -455,11 +465,13 @@ article section {
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-field-spotlight-source {
 		display: inline-block;
 		text-transform: uppercase;
+		font-family: Helvetica, Arial, "sans-serif";
     	padding: 7px 0 7px;
     	font-size: 15px;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-field-spotlight-date {
 		text-transform: uppercase;
+		font-family: Helvetica, Arial, "sans-serif";
     	font-size: 15px;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-title {
