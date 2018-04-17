@@ -90,6 +90,10 @@
 #block-cuenergy-views-block-events-block-1 .event-title-and-location > div:first-of-type {
     margin-bottom: 12px;
 }
+.event-title-and-location a {
+    font-size: 24px;
+}
+
 
 /***** Header *****/
 #cu-header .cu-brand {
@@ -320,9 +324,23 @@ nav.tabs {
 }
 #main .region-sidebar-first {
     overflow: hidden;
-    width: 345px;
+    width: 392px;
     float: right;
 }
+#main .region-sidebar-first ul {
+    width: 100%;
+}
+#main .region-sidebar-first ul li {
+    width: 100%;
+    background: #dce6e4;
+}
+#block-mainnavigation {
+	padding-bottom: 34px;
+}
+#block-webform-2 {
+	padding: 15px 60px 24px 0;
+}
+
 /***** Typography *****/
 a {
 	color: #263c73;
@@ -353,6 +371,46 @@ main h2, #main h2 {
 	padding-left: 0;
 }
 /***** Miscellaneous *****/
+#toolbar-administration,
+#toolbar-administration * {
+      font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif !important;
+}
+.btn {
+    color: #fff;
+    background-color: #4C7446;
+    border-color: #354F4F;
+    font-size: 19px;
+}
+.all-caps {
+	text-transform: uppercase;
+	font-family: Helvetica, Arial, "sans-serif";
+}
+.region-sidebar-first h2.block-title,
+.region-sidebar-first h2.all-caps {
+	font-size: 22px;
+	margin-bottom: 2em;
+}
+.region-sidebar-first #block-webform-2 h2.block-title {
+    margin-bottom: .5em;
+    font-size: 25px;
+    margin-top: 18px;
+    line-height: 32px !important;
+}
+#webform-submission-contact-add-form .form-group:first-of-type {
+	margin-top: 15px;
+}
+#webform-submission-contact-add-form > div {
+
+}
+#webform-submission-contact-add-form > label {
+    font-size: .9em;
+    line-height: 1.48em;
+	color: #626262;
+}
+label, .btn, .navbar {
+    font-family: "capitolina",serif;
+	font-weight: normal;
+}
 #main {
 	max-width: 1280px;
     padding-left: 0;
@@ -373,13 +431,13 @@ body:not(.path-frontpage) #main > .row {
 }
 body:not(.path-frontpage) #main > .row aside {
     margin-left: 15px;
-	padding: 46px 47px;
+	padding: 56px 0 56px 47px;
 	width: 36%;
 }
 body:not(.path-frontpage) #main > .row > section {
     width: calc(64% - 15px) !important;
     background: #fff;
-    padding: 56px 47px;
+    padding: 50px 47px;
 }
 #main > .row > section > .region-content > article > .content > .field--items > .field--item:not(:first-child) {
     padding-left: 60px;
@@ -429,6 +487,12 @@ article section {
 .paragraph.paragraph--type--insert-slideshow > .paragraph__column {
 	padding-left: 0;
 	padding-right: 0;
+}
+.basic-page.header-image h2 {
+  display: none;
+}
+.basic-page.header-image img {
+  width: 100%;
 }
 
 /***** Responsive *****/

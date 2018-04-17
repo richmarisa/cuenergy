@@ -179,6 +179,7 @@ body > header .slider-container {
 
 main .slider-caption .caption-inner, 
 #main .slider-caption .caption-inner,
+.slider-caption p,
 .region-campaign .field--name-field-header-caption .field--item {
   left: unset !important;
   right: 5% !important;
@@ -187,7 +188,16 @@ main .slider-caption .caption-inner,
   width: 45% !important;
   text-align: right !important;
   text-transform: none;
-  font-weight: bold;
+  font-size: 27px;
+  font-weight: normal;
+  line-height: 1.42em;
+
+}
+.slider-caption p {
+  width: 100% !important;
+}
+.region-campaign .field--name-field-header-caption .field--item {
+  bottom: 23px !important;
 }
 
 main .slider-caption .campaign-nav, #main .slider-caption .campaign-nav {
@@ -217,7 +227,7 @@ main .slider-caption .campaign-nav.left, #main .slider-caption .campaign-nav.lef
   color: #fff;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   text-transform: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 main .slider-caption h2, 
