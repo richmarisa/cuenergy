@@ -132,6 +132,7 @@ body > header .slider-container {
   min-height: 640px;
 }
 
+.region-campaign .field--name-field-header-caption .field--item,
 .slider-caption .caption-inner {
   position: absolute;
   top: 24%;
@@ -177,7 +178,8 @@ body > header .slider-container {
 }
 
 main .slider-caption .caption-inner, 
-#main .slider-caption .caption-inner {
+#main .slider-caption .caption-inner,
+.region-campaign .field--name-field-header-caption .field--item {
   left: unset !important;
   right: 5% !important;
   top: unset !important;
@@ -209,6 +211,7 @@ main .slider-caption .campaign-nav.left, #main .slider-caption .campaign-nav.lef
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
+.region-campaign .field--name-field-header-caption .field--item,
 .slider-caption p {
   font-family: Avenir Next, Proxima Nova, 'proxima-nova', Segoe UI, Helvetica Neue, sans-serif;
   color: #fff;
