@@ -2,6 +2,13 @@
 
 jQuery(document).ready(function($) {	
 	
+	// Add external link icons
+	$('#block-views-block-news-block-1 .views-col .field-name-title a').append('<span class="fas fa-external-link-alt"></span>')
+	$('#block-views-block-featured-reports-block-1 .views-col .views-field-title a').append('<span class="fas fa-external-link-alt"></span>')
+	
+	// Localist markup
+	$('.lw_event_item_title > a').wrap('<h2 class="event-title"></h2>');
+	
 	// Window Size Tracking
 	function resizeChecks() {
 		//if ( $(window).width() <= 767 ) {

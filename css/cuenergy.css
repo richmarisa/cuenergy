@@ -90,6 +90,38 @@
 #block-cuenergy-views-block-events-block-1 .event-title-and-location > div:first-of-type {
     margin-bottom: 12px;
 }
+#block-views-block-news-block-1 a,
+#block-views-block-featured-reports-block-1 a {
+	text-decoration: none;
+	/*font-style: normal;
+	font-weight: 600;*/
+}
+#block-views-block-news-block-1 a:hover,
+#block-views-block-featured-reports-block-1 a:hover,
+#block-views-block-news-block-1 a:focus,
+#block-views-block-featured-reports-block-1 a:focus {
+	color: #266A3D;
+}
+#block-views-block-news-block-1 .views-col .field-name-title a .svg-inline--fa,
+#block-views-block-featured-reports-block-1 .views-col .views-field-title a .svg-inline--fa {
+	padding-left: 8px;
+    font-size: 24px;
+}
+#block-views-block-news-block-1 img,
+#block-views-block-featured-reports-block-1 img {
+   -webkit-backface-visibility: hidden;
+}
+#block-views-block-news-block-1 img:hover,
+#block-views-block-featured-reports-block-1 img:hover {
+    opacity: .8;
+   -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  transition: opacity .7s; 
+}
+
 .event-title-and-location a {
     font-size: 24px;
 }
@@ -206,13 +238,32 @@
 
 /***** People *****/
 .view-id-people .view-content .views-row {
-    padding-bottom: 10px;
+    padding-bottom: 24px;
 }
 .people-listing .views-field-field-image {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .people-listing h2 {
     margin-bottom: 6px;
+}
+.views-label-cesi-title {
+  color: #333333;
+}
+.views-label-cesi-title:before {
+  content: " - ";
+}
+.path-people #main .people-listing .views-field-title h3 a {
+	font-weight: normal;
+}
+.path-people #main .people-listing .views-field-summary .views-more-link {
+	font-weight: normal;
+}
+#main .tabs--primary.nav.nav-tabs li a {
+	font-weight: normal;
+}
+#main h2 a, 
+#main h3 a {
+	font-weight: normal !important;
 }
 
 /***** Discover *****/
@@ -222,11 +273,11 @@
 .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-title {
     position: absolute;
     bottom: 24px;
-    right: 40px;
+    right: 35px;
 }
 .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-title a {
     color: #fff;
-    font-size: 26px;
+    font-size: 24px;
     text-decoration: none;
 }
 .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img {
@@ -235,8 +286,6 @@
 .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img:hover {
     opacity: .8;
    -webkit-backface-visibility: hidden;
-}
-.paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img:hover {
   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity .7s;
   -moz-transition: opacity .7s;
@@ -341,7 +390,7 @@ nav.tabs {
     width: 100%;
     background: none;
     margin-left: 0;
-    margin-bottom: 1px;
+    margin-bottom: 24px;
 }
 #main .region-sidebar-first ul .active {
     background: #dce6e4;
@@ -353,10 +402,67 @@ nav.tabs {
 	padding: 15px 60px 24px 0;
 }
 
+/***** Events *****/
+.path-news-events-college-engineering-events #main > .row > section h2 {
+	font-size: 23px;
+	font-family: "schoolbook",serif;
+}
+.path-news-events-college-engineering-events #main > .row > section a {
+	font-weight: normal;
+	color: #263c73;
+}
+#main .localist_widget_container li.lw_event_item {
+    margin: 0 0 21px 0;
+    border: none;
+    background: #fafafa;
+    font-family: "capitolina",serif;
+    overflow: hidden;
+}
+#main .localist_widget_container ul.lw_event_list {
+    max-width: none;
+}
+#main .lw_event_item_image img {
+   -webkit-backface-visibility: hidden;
+	width: 200px;
+}
+#main .lw_event_item_image img:hover {
+    opacity: .8;
+   -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: opacity .7s;
+  -moz-transition: opacity .7s;
+  -o-transition: opacity .7s;
+  transition: opacity .7s; 
+}
+#main .localist_widget_container span.lw_event_item_date {
+    padding: 10px 0px;
+    font-size: 15px;
+    text-transform: none;
+    font-family: "schoolbook",serif;
+}
+#main .localist_widget_container div.lw_event_content {
+    padding: 0 20px 10px;
+}
+#main .localist_widget_container div.lw_event_item_description {
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 3px;
+}
+
 /***** Typography *****/
 a {
 	color: #263c73;
 }
+body:not(.path-frontpage) #main > .row > section a {
+	text-decoration: underline;
+    font-weight: bold;
+}
+body:not(.path-frontpage) #main > .row > section a:hover,
+body:not(.path-frontpage) #main > .row > section a:focus {
+	color: #266A3D;
+	text-decoration: none;
+}
+
 html,
 body,
 p,
@@ -386,6 +492,13 @@ main h2, #main h2 {
 #toolbar-administration,
 #toolbar-administration * {
       font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif !important;
+}
+.cu-search button[type='submit'] {
+    width: 1.9em;
+    height: 1.9em;
+}
+.cu-search #cu-search-query {
+    height: 1.9em;
 }
 .btn {
     color: #fff;
@@ -417,17 +530,7 @@ main h2, #main h2 {
     margin-top: 18px;
     line-height: 32px !important;
 }
-#webform-submission-contact-add-form .form-group:first-of-type {
-	margin-top: 15px;
-}
-#webform-submission-contact-add-form > div {
 
-}
-#webform-submission-contact-add-form > label {
-    font-size: .9em;
-    line-height: 1.48em;
-	color: #626262;
-}
 label, .btn, .navbar {
     font-family: "capitolina",serif;
 	font-weight: normal;
@@ -506,6 +609,22 @@ body.path-search input[type="search"],
 body.path-search input[type="text"] {
     height: 41px;
 }
+#block-webform h2 {
+    margin-bottom: .5em;
+    font-size: 25px;
+    margin-top: 18px;
+    line-height: 32px !important;
+}
+#webform-submission-contact-add-form .form-group:first-of-type {
+	margin-top: 15px;
+}
+#webform-submission-energy-seminar-notification-add-form > label,
+#webform-submission-contact-add-form > label {
+    font-size: .9em;
+    line-height: 1.48em;
+	color: #626262;
+}
+
 
 /***** Slider *****/
 .slider-container .campaign-nav.right .next-prev {
