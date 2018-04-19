@@ -1,7 +1,7 @@
 // Child js
 
 jQuery(document).ready(function($) {	
-		
+	
 	// Window Size Tracking
 	function resizeChecks() {
 		//if ( $(window).width() <= 767 ) {
@@ -27,8 +27,24 @@ jQuery(document).ready(function($) {
 	
 	// Window Load ------------------------------------------------------------
 	$(window).on("load", function() {
-		
-		
+
+		$("#cu-search-form").attr("action", "/search/node/");
+		$("#cu-search-query").attr("name", "keys");
+
+		$('input[type=radio][name=sitesearch]').on('change', function() {
+	     switch($(this).val()) {
+	         case 'thissite':
+				 $("#cu-search-form").attr("action", "/search/node/");
+				 $("#cu-search-query").attr("name", "keys");
+				 cu-search-query
+	             break;
+	         case 'cornell':
+	             $("#cu-search-form").attr("action", "https://cornell.edu/search/");
+	             $("#cu-search-query").attr("name", "q");
+	             break;
+	     }
+		});
+
 	});
 	
 });
