@@ -34,15 +34,15 @@ jQuery(document).ready(function($) {
 	if ( $(window).width() <= 767 ) {
 		$('#navbar .navbar-header').before( $('.menu.menu--main.nav.navbar-nav') );
 		$('#navbar .navbar-header').css('display', 'none');
-		$('#mobile-nav').on('click', function() {
-			$('#mobile-nav-dimmer').toggleClass('open closed');
-			$('#navbar').slideToggle('fast');
-		});
 	} else {
 		$('#navbar .menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
 		$('#navbar .navbar-header').css('display', 'block');
 	}
 	
+	$('#mobile-nav').on('click', function() {
+		$('#mobile-nav-dimmer').toggleClass('open closed');
+		$('#navbar').slideToggle('fast');
+	});
 	
 	$(window).resize(resizeChecks);
 	resizeChecks();

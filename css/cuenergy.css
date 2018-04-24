@@ -440,6 +440,7 @@ nav.tabs {
 #block-mainnavigation {
 	padding-bottom: 34px;
 }
+#block-webform-2,
 #block-webform {
 	padding: 15px 60px 24px 0;
 }
@@ -501,6 +502,30 @@ nav.tabs {
     font-size: 20px;
     line-height: 1.6;
     padding-top: 3px;
+}
+#main .pin {
+    width: 13px;
+    height: 13px;
+    margin-top: 13px;
+}
+#main .localist_widget_container div.lw_event_item_location {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Helvetica, Arial, "sans-serif";
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#main .localist_widget_container .lw_event_item_location a {
+    font-weight: normal !important;
+}
+#main .clock {
+    height: 13px;
+    width: 13px;
+}
+#main .localist_widget_container div.lw_event_item_time {
+    margin-left: 20px;
+    font-size: 15px;
+    font-family: Helvetica, Arial, "sans-serif";
 }
 
 /***** Typography *****/
@@ -630,22 +655,22 @@ h4, h5, h6, .h4, .h5, .h6 {
 .panel.info {
     border: 1px solid rgba(31, 68, 135, 0.13);
     border-left: 8px solid #1f4487;
-    background: rgba(31, 68, 135, 0.17);
+    background: rgba(31, 68, 135, 0.11);
 }
 .panel.clocktower {
     border: 1px solid #b31b1b1a;
     border-left: 8px solid #b31b1b;
-    background: rgba(179, 27, 27, 0.12);
+    background: rgba(179, 27, 27, 0.05);
 }
 .panel.important {
     border: 1px solid #ff000033;
     border-left: 8px solid #ce2828;
-    background: rgba(255, 0, 0, 0.17);
+    background: rgba(255, 0, 0, 0.11);
 }
 .panel.question {
     border: 1px solid rgba(38, 106, 61, 0.25);
     border-left: 8px solid #266A3D;
-    background: rgba(38, 106, 61, 0.23);
+    background: rgba(38, 106, 61, 0.11);
 }
 .cu-search button[type='submit'] {
     width: 1.9em;
@@ -891,7 +916,7 @@ body.path-search input[type="text"] {
 @media (max-width: 1000px) {
 
 }
-@media (max-width: 850px) {
+@media (max-width: 880px) {
 	.navbar-nav > li:not(:first-child) {
 		margin-left: 13px;
 	}
@@ -910,6 +935,7 @@ body.path-search input[type="text"] {
 	#navbar {
 		display: none;
 		position: absolute;
+		background: none !important;
 		background-color: #fff !important;
 	}
 	#navbar ul {
