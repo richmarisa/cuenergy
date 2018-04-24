@@ -2,6 +2,21 @@
 
 jQuery(document).ready(function($) {	
 	
+	// Window Size Tracking
+	function resizeChecks() {
+		if ( $(window).width() <= 767 ) {
+			$('#navbar .navbar-header').before( $('.menu.menu--main.nav.navbar-nav') );
+			$('#navbar .navbar-header').css('display', 'none');
+			$('#mobile-nav-dimmer').addClass('closed');
+		} else {
+			$('.menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
+			$('#navbar .navbar-header').css('display', 'block');
+			$('#navbar').removeAttr('style');
+			$('#mobile-nav-dimmer').removeClass('open');
+			$('#mobile-nav-dimmer').css('display','none');
+		}
+	}
+	
 	// Add external link icons
 	$('#block-views-block-news-block-1 .views-col .field-name-title a').append('<span class="fas fa-external-link-alt"></span>')
 	$('#block-views-block-featured-reports-block-1 .views-col .views-field-title a').append('<span class="fas fa-external-link-alt"></span>')
@@ -9,26 +24,28 @@ jQuery(document).ready(function($) {
 	// Localist markup
 	$('.lw_event_item_title > a').wrap('<h2 class="event-title"></h2>');
 	
-	// Window Size Tracking
-	function resizeChecks() {
-		//if ( $(window).width() <= 767 ) {
-		//	$('#navbar .navbar-header').before('.menu.menu--main.nav.navbar-nav');
-		//	$('#navbar .navbar-header').css('display', 'none');
-	//	} else {
-			//$('.menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
-		//	$('#navbar .navbar-header').css('display', 'block');
-		//}
-	//}
+	// Remove dash from empty CESI titles
+	$('.views-label.views-label-cesi-title').each(function(){
+		if ( $(this).length == 0 ) {
+			$(this+':before').css('content','');
+		}
+	});
 	
-	//if ( $(window).width() <= 767 ) {
-		//$('#navbar .navbar-header').before('.menu.menu--main.nav.navbar-nav');
-		//$('#navbar .navbar-header').css('display', 'none');
-	//} else {
-		//$('.menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
-		//$('#navbar .navbar-header').css('display', 'block');
+	if ( $(window).width() <= 767 ) {
+		$('#navbar .navbar-header').before( $('.menu.menu--main.nav.navbar-nav') );
+		$('#navbar .navbar-header').css('display', 'none');
+		$('#mobile-nav').on('click', function() {
+			$('#mobile-nav-dimmer').toggleClass('open closed');
+			$('#navbar').slideToggle('fast');
+		});
+	} else {
+		$('.menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
+		$('#navbar .navbar-header').css('display', 'block');
 	}
-	//$(window).resize(resizeChecks);
-	//resizeChecks();
+	
+	
+	$(window).resize(resizeChecks);
+	resizeChecks();
 		
 	
 	

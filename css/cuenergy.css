@@ -23,6 +23,10 @@
 	font-family: Helvetica, Arial, "sans-serif";
     font-size: 15px;
     position: absolute;
+    top: 8px;
+    right: 32px;
+}
+.path-frontpage.user-logged-in .form-group .more-link {
     top: -48px;
     right: 21px;
 }
@@ -30,7 +34,9 @@
 	padding-right: 41px;
 	background: url(../images/long-arrow-alt-right.png) right 1px no-repeat;
 }
-
+.header-image .field--name-field-media-image > div {
+	position: relative;
+}
 .block-views-blockfeatured-faculty-member-block-1 {
     width: 395px;
     height: 564px;
@@ -90,6 +96,29 @@
 #block-cuenergy-views-block-events-block-1 .event-title-and-location > div:first-of-type {
     margin-bottom: 12px;
 }
+
+.path-news-events #main article {
+    display: table;
+    border-spacing: 0 24px;
+}
+.path-news-events #main article > .content {
+    position: relative;
+    top: -84px;
+}
+.news-events-page-grid {
+	display: table-row;
+}
+.news-events-page-grid > div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 65%;
+	padding-left: 4%;
+}
+.news-events-page-grid a img {
+	width: 100%;
+	max-width: 300px;
+}
+
 #block-views-block-news-block-1 a,
 #block-views-block-featured-reports-block-1 a {
 	text-decoration: none;
@@ -134,6 +163,9 @@
     padding-right: 15px !important;
 	max-width: 1280px !important;
 }
+.dialog-off-canvas-main-canvas > #main > .row > .col-sm-12 {
+	min-height: 0;
+}
 
 /***** Navigation *****/
 .region-navigation-collapsible {
@@ -172,6 +204,7 @@
 .path-user #navbar {
     position: relative;
 }
+
 #navbar #navbar-collapse {
     max-width: 1280px;
 	position: relative;
@@ -266,6 +299,14 @@
 #main h3 a {
 	font-weight: normal !important;
 }
+.views-row.people-listing .views-label.views-label-body {
+	float: left;
+	padding-right: 5px;
+}
+.views-row.people-listing .views-field.views-field-body {
+	margin-top: 5px;
+}
+
 
 /***** Discover *****/
 .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col {
@@ -399,8 +440,20 @@ nav.tabs {
 #block-mainnavigation {
 	padding-bottom: 34px;
 }
-#block-webform-2 {
+#block-webform {
 	padding: 15px 60px 24px 0;
+}
+.webform-submission-contact-add-form > label,
+.webform-submission-energy-seminar-notification-form > label {
+    font-size: 19px;
+    line-height: 1.4em;
+    margin-bottom: 16px;
+}
+.open {
+	display: block !important;
+}
+.closed {
+	display: none !important;
 }
 
 /***** Events *****/
@@ -454,16 +507,22 @@ nav.tabs {
 a {
 	color: #263c73;
 }
+textarea.form-textarea a {
+    font-weight: bold !important;
+}
 body:not(.path-frontpage) #main > .row > section a {
 	text-decoration: underline;
-    font-weight: bold;
+    font-weight: 600;
 }
 body:not(.path-frontpage) #main > .row > section a:hover,
 body:not(.path-frontpage) #main > .row > section a:focus {
 	color: #266A3D;
 	text-decoration: none;
 }
-
+span.intro-text {
+    color: #3c763d;
+    font-size: 22px;
+}
 html,
 body,
 p,
@@ -478,8 +537,37 @@ h2, .h2 {
     color: #222222;
     font-size: 28px;
 }
-main h2, #main h2 {
+h2,
+main h2, 
+#main h2 {
     color: #222222;
+}
+h3,
+main h3, 
+#main .h3,
+#main h3, 
+main .h3 {
+    font-size: 22px;
+}
+h4,
+main h4, 
+#main .h4,
+#main h4, 
+main .h4 {
+    font-size: 17px;
+	text-transform: uppercase;
+}
+h6, .h6 {
+    font-size: 16px;
+    color: #888;
+}
+h4, h5, h6, .h4, .h5, .h6 {
+    font-weight: normal;
+    margin-bottom: 1em;
+    line-height: 1.4;
+}
+#footer-second .all-caps {
+	font-size: 18px;
 }
 .path-frontpage main h2,
 .path-frontpage #main h2 {
@@ -493,6 +581,71 @@ main h2, #main h2 {
 #toolbar-administration,
 #toolbar-administration * {
       font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif !important;
+}
+.localist_widget_container .pin:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    margin: 5px 0 0 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+.source-date {
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, "sans-serif";
+    font-size: 15px;
+    color: #777;
+}
+.fa {
+    position: relative;
+    top: 1px;
+	margin-right: 6px;
+}
+.icon-clocktower-bold {
+    font-size: 20px;
+    color: #b31b1b;
+}
+.fa-info-circle {
+    font-size: 23px;
+    color: #1f4487;
+}
+.fa-exclamation-circle {
+    font-size: 23px;
+    color: #ce2828;
+}
+.fa-question-circle {
+    font-size: 23px;
+    color: #266A3D;
+}
+.panel {
+	padding: 10px 12px 10px 54px;
+    position: relative;
+	margin-bottom: 20px;
+}
+.panel > .fa {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+}
+.panel.info {
+    border: 1px solid rgba(31, 68, 135, 0.13);
+    border-left: 8px solid #1f4487;
+    background: rgba(31, 68, 135, 0.17);
+}
+.panel.clocktower {
+    border: 1px solid #b31b1b1a;
+    border-left: 8px solid #b31b1b;
+    background: rgba(179, 27, 27, 0.12);
+}
+.panel.important {
+    border: 1px solid #ff000033;
+    border-left: 8px solid #ce2828;
+    background: rgba(255, 0, 0, 0.17);
+}
+.panel.question {
+    border: 1px solid rgba(38, 106, 61, 0.25);
+    border-left: 8px solid #266A3D;
+    background: rgba(38, 106, 61, 0.23);
 }
 .cu-search button[type='submit'] {
     width: 1.9em;
@@ -679,11 +832,13 @@ body.path-search input[type="text"] {
 		font-family: Helvetica, Arial, "sans-serif";
     	padding: 7px 0 7px;
     	font-size: 15px;
+		color: #777;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-field-spotlight-date {
 		text-transform: uppercase;
 		font-family: Helvetica, Arial, "sans-serif";
     	font-size: 15px;
+		color: #777;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-title {
 
@@ -748,6 +903,41 @@ body.path-search input[type="text"] {
 	}
 }
 @media (max-width: 767px) {
-
+	.dialog-off-canvas-main-canvas > #main > .row > .col-sm-12 {
+		min-height: 0;
+	}
+	
+	#navbar {
+		display: none;
+		position: absolute;
+		background-color: #fff !important;
+	}
+	#navbar ul {
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	#navbar ul,
+	#navbar li,
+	#navbar li a {
+		margin: 0;
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 96%;
+	}
+	#cu-header .cu-brand,
+	#cu-header .cu45-helper {
+		z-index: 999;
+		position: relative;
+	}
+	#mobile-nav-dimmer {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(0,0,0,0.82);
+		z-index: 5;
+		display: none;
+	}
 }
 

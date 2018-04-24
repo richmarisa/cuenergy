@@ -71,15 +71,15 @@
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
+	<script src="https://use.fontawesome.com/eb9be9539b.js"></script>
     <css-placeholder token="{{ placeholder_token|raw }}">
     <js-placeholder token="{{ placeholder_token|raw }}">
-    <script defer src="//use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="//use.typekit.net/xbz3qob.css">
   </head>
   <body{{ attributes.addClass(body_classes) }}>
 
 	<div id="skipnav"><a href="#main">{{ 'Skip to main content'|t }}</a></div>
-
+	<div id="mobile-nav-dimmer" class="closed"></div>
     <header id="cu-header">
       <div id="cu-search" class="cu-search">
         <div class="{{ container }}">
