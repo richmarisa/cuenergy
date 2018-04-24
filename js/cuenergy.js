@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 			$('#navbar .navbar-header').css('display', 'none');
 			$('#mobile-nav-dimmer').addClass('closed');
 		} else {
-			$('.menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
+			$('#navbar .menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
 			$('#navbar .navbar-header').css('display', 'block');
 			$('#navbar').removeAttr('style');
 			$('#mobile-nav-dimmer').removeClass('open');
@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
 			$('#navbar').slideToggle('fast');
 		});
 	} else {
-		$('.menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
+		$('#navbar .menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');
 		$('#navbar .navbar-header').css('display', 'block');
 	}
 	
