@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 	$('.next-prev').prependTo('.slider-container');
 	
 	// Move more links
-	if ( $(window).width() <= 500 ) {
+	if ( $(window).width() <= 630 ) {
 		$('.path-frontpage .more-link').each(function(){
 			$(this).appendTo($(this).prev('.view-content'));
 		});		
