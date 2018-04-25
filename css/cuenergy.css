@@ -1275,7 +1275,6 @@ body.path-search input[type="text"] {
 		position: relative !important;
 	}
 }
-
 @media (max-width: 600px) {
 	#main .slider-container .next-prev .fa-angle-left, 
 	#main .slider-container .next-prev .fa-angle-right {
