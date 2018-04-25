@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
 	
 	// Window Size Tracking
 	function resizeChecks() {
-		if ( $(window).width() <= 767 ) {
-			$('#navbar .navbar-header').before( $('.menu.menu--main.nav.navbar-nav') );
+		if ( $(window).width() <= 752 ) {
+			$('#navbar .navbar-header').before( $('#navbar .menu.menu--main.nav.navbar-nav') );
 			$('#navbar .navbar-header').css('display', 'none');
 			$('#mobile-nav-dimmer').addClass('closed');
 		} else {
@@ -17,12 +17,25 @@ jQuery(document).ready(function($) {
 		}
 	}
 	
+	// Add anchor for broken ARIA reference error. Not a real solution, quick and dirty, but see here: https://github.com/react-bootstrap/react-bootstrap/issues/1827
+	$('<a id="popup-anchor" href="#" class="visually-hidden">Popup</a>').appendTo('#popup');
+	
 	// Add external link icons
 	$('#block-views-block-news-block-1 .views-col .field-name-title a').append('<span class="fas fa-external-link-alt"></span>')
 	$('#block-views-block-featured-reports-block-1 .views-col .views-field-title a').append('<span class="fas fa-external-link-alt"></span>')
 	
 	// Localist markup
 	$('.lw_event_item_title > a').wrap('<h2 class="event-title"></h2>');
+	
+	// Move slider buttons
+	$('.next-prev').prependTo('.slider-container');
+	
+	// Move more links
+	if ( $(window).width() <= 500 ) {
+		$('.path-frontpage .more-link').each(function(){
+			$(this).appendTo($(this).prev('.view-content'));
+		});		
+	}
 	
 	// Remove dash from empty CESI titles
 	$('.views-label.views-label-cesi-title').each(function(){
@@ -31,8 +44,9 @@ jQuery(document).ready(function($) {
 		}
 	});
 	
-	if ( $(window).width() <= 767 ) {
-		$('#navbar .navbar-header').before( $('.menu.menu--main.nav.navbar-nav') );
+	// Mobile navigation
+	if ( $(window).width() <= 752 ) {
+		$('#navbar .navbar-header').before( $('#navbar .menu.menu--main.nav.navbar-nav') );
 		$('#navbar .navbar-header').css('display', 'none');
 	} else {
 		$('#navbar .menu.menu--main.nav.navbar-nav').appendTo('#block-cuenergy-main-menu');

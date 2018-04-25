@@ -39,8 +39,11 @@
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('sr-only') %}
   {% endif %}
-  <h2{{ title_attributes.setAttribute('id', heading_id) }} class="all-caps">{{ configuration.label | replace ({'-':' '}) | title }}</h2>
+  
+  {% set theTitle = configuration.label == 'news-events' ? 'News & Events' : configuration.label %}
 
+  <h2{{ title_attributes.setAttribute('id', heading_id) }} class="all-caps">{{ theTitle | replace ({'-':' '}) | title }}</h2>
+  
   {% block content %}
     {{ content }}
   {% endblock %}
