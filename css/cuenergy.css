@@ -38,17 +38,21 @@
 	position: relative;
 }
 .block-views-blockfeatured-faculty-member-block-1 {
-    width: 395px;
-    height: 564px;
     padding-top: 31px;
     padding-left: 26px;
     padding-right: 26px;
     background: #EEF0F6;
     border-top: 3px solid #0d6c37;
 }
+.path-frontpage #main .paragraph--type--bp-columns-two-uneven__2col-column1 {
+    min-width: 367px;
+}
+#block-cuenergy-views-block-featured-faculty-member-block-1 {
+	margin-bottom: 42px;
+}
 .featured-faculty-body {
     padding-top: 8px;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
     background: #EEF0F6;
 }
 .featured-faculty-body > p {
@@ -147,7 +151,6 @@
 #block-views-block-news-block-1 img:hover,
 #block-views-block-featured-reports-block-1 img:hover {
     opacity: .8;
-   -webkit-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity .7s;
   -moz-transition: opacity .7s;
@@ -871,7 +874,6 @@ body.path-search input[type="text"] {
 		float: none;
 		max-width: 1280px;
 		margin: 0 auto;
-		overflow: hidden;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -938,6 +940,13 @@ body.path-search input[type="text"] {
 		font-size: 39px;
 	}
 }
+
+.paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column2 {
+    float: right;
+    width: 64.666667%;
+}
+
+
 @media (max-width: 1180px) {
 	#main .region-sidebar-first {
 		width: 72%;
@@ -990,6 +999,22 @@ body.path-search input[type="text"] {
 		padding: 0 0 43%;
 	}
 }
+@media (max-width: 1080px) {
+	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column1 * {
+		width: 100%;
+	}
+	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column1 {
+		width: 36%;
+	}
+	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column2 {
+		width: 58%;
+    	float: right;
+	}
+	.path-frontpage #block-views-block-news-block-1 .views-col .field.field-name-title.title,
+	.path-frontpage .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-title {
+		line-height: 26px;
+	}
+}
 @media (max-width: 980px) {
 	#main .slider-container .next-prev .fa-angle-left, 
 	#main .slider-container .next-prev .fa-angle-right {
@@ -1024,6 +1049,11 @@ body.path-search input[type="text"] {
 	}
 	#main .region-sidebar-first {
 		width: 77%;
+	}
+}
+@media (max-width: 895px) {
+	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column2 {
+		width: 55%;
 	}
 }
 @media (max-width: 880px) {
@@ -1066,6 +1096,19 @@ body.path-search input[type="text"] {
 	#main .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-col.col-3 {
 		width: 46% !important;
 		clear: both;
+	}
+}
+@media (max-width: 850px) {
+	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column1,
+	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column2 {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	.path-frontpage #main .paragraph--type--bp-columns-two-uneven__2col-column1 {
+		max-width: 464px;
+		float: none;
+		margin: 0 auto;
 	}
 }
 @media (max-width: 800px) {
@@ -1221,15 +1264,15 @@ body.path-search input[type="text"] {
 		font-size: 24px;
 	}
 	.path-frontpage .form-group .more-link {
-		top: unset;
-		bottom: 19px;
-		right: 0;
+		top: unset !important;
+		bottom: 19px !important;
+		right: 0 !important;
 	}
 	#block-views-block-news-block-1 .view-content,
 	#block-views-block-featured-reports-block-1 .view-content {
-		padding-bottom: 45px;
-		margin-bottom: 30px;
-		position: relative;
+		padding-bottom: 45px !important;
+		margin-bottom: 30px !important;
+		position: relative !important;
 	}
 }
 

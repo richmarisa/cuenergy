@@ -15,6 +15,18 @@ jQuery(document).ready(function($) {
 			$('#mobile-nav-dimmer').removeClass('open');
 			$('#mobile-nav-dimmer').css('display','none');
 		}
+		
+		// Move more links
+		if ( $(window).width() <= 630 ) {
+			$('.path-frontpage .more-link').each(function(){
+				$(this).appendTo($(this).prev('.view-content'));
+			});		
+		}
+		else {
+			$('.path-frontpage .view-content .more-link').each(function(){
+				$(this).appendTo($(this).prev('.view'));
+			});		
+		}
 	}
 	
 	// Fit videos
@@ -37,6 +49,11 @@ jQuery(document).ready(function($) {
 	if ( $(window).width() <= 630 ) {
 		$('.path-frontpage .more-link').each(function(){
 			$(this).appendTo($(this).prev('.view-content'));
+		});		
+	}
+	else {
+		$('.path-frontpage .more-link').each(function(){
+			$(this).appendTo($(this).prev('.view'));
 		});		
 	}
 	
