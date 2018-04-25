@@ -17,6 +17,9 @@ jQuery(document).ready(function($) {
 		}
 	}
 	
+	// Fit videos
+	$("#main").fitVids();
+		
 	// Add anchor for broken ARIA reference error. Not a real solution, quick and dirty, but see here: https://github.com/react-bootstrap/react-bootstrap/issues/1827
 	$('<a id="popup-anchor" href="#" class="visually-hidden">Popup</a>').appendTo('#popup');
 	

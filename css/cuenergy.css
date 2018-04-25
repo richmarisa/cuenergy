@@ -610,6 +610,10 @@ h4, h5, h6, .h4, .h5, .h6 {
 #toolbar-administration * {
       font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif !important;
 }
+.video-content {
+	max-width:500px;
+}
+
 .localist_widget_container .pin:after {
     content: "";
     width: 5px;
@@ -958,6 +962,12 @@ body.path-search input[type="text"] {
 		width: 17px;
 		height: 17px;
 	}
+	.region.region-campaign section article .field--name-field-header-caption .field--item {
+		bottom: 6px !important;
+		width: 44% !important;
+		font-size: 26px !important;
+		line-height: 1.2em !important;
+	}
 }
 @media (max-width: 1225px) {
 	#navbar .logo {
@@ -994,6 +1004,12 @@ body.path-search input[type="text"] {
 	}
 	.slider-container .next-prev {
 		margin-top: 15vw;
+	}
+	.region.region-campaign section article .field--name-field-header-caption .field--item {
+		bottom: 6px !important;
+		width: 48% !important;
+		font-size: 23px !important;
+		line-height: 1.2em !important;
 	}
 }
 @media (max-width: 900px) {
@@ -1050,6 +1066,15 @@ body.path-search input[type="text"] {
 	#main .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-col.col-3 {
 		width: 46% !important;
 		clear: both;
+	}
+}
+@media (max-width: 800px) {
+	.region.region-campaign section article .field--name-field-header-caption .field--item {
+		bottom: -5px !important;
+		width: 48% !important;
+		font-size: 23px !important;
+		line-height: 1em !important;
+		right: 3% !important;
 	}
 }
 @media (max-width: 767px) {
