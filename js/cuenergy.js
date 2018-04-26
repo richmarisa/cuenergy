@@ -16,7 +16,11 @@ jQuery(document).ready(function($) {
 			$('#mobile-nav-dimmer').css('display','none');
 		}
 		
-		// Move more links
+		// Insert more links on home page
+		$('.view-id-news').append('<div class="more-link form-group"><a href="/news-events/news">More news</a></div>');
+		$('.view-id-featured_reports').append('<div class="more-link form-group"><a href="/news-events/news">More reports</a></div>');
+		
+		// Move more links to bottom on mobile
 		if ( $(window).width() <= 630 ) {
 			$('.path-frontpage .more-link').each(function(){
 				$(this).appendTo($(this).prev('.view-content'));
