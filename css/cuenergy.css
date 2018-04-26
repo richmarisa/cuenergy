@@ -1050,6 +1050,14 @@ body.path-search input[type="text"] {
 	.path-frontpage .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-title a {
 		font-size: 24px;
 	}
+	.views-row.people-listing .views-field-field-image {
+		float: none;
+		margin: 0 auto 15px;
+	}
+	.views-row.people-listing .views-field-body > * {
+		width: 100%;
+		float: none;
+	}
 }
 @media (max-width: 900px) {
 	#main .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-field-spotlight-date,
@@ -1073,7 +1081,10 @@ body.path-search input[type="text"] {
 	.path-frontpage #main .view-id-discover .views-view-grid.horizontal .views-row .views-col {
 		width: 90% !important;
 		margin: 0 auto;
-		float: none;
+		float: none !important;
+	}
+	.path-frontpage #main .view-id-discover .views-view-grid.horizontal .views-row .views-col.col-1 {
+		margin-bottom: 0 !important;
 	}
 	.path-frontpage #main .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col .views-field-field-image-single img {
 		margin: 0 auto 20px;
@@ -1120,15 +1131,15 @@ body.path-search input[type="text"] {
 	.slider-container .next-prev {
 		margin-top: 14vw;
 	}
-	#main .paragraph:not(.paragraph--type--insert-slideshow):not(.paragraph--type--featured-reports-block.paragraph--id--7) > .paragraph__column .views-view-grid .views-col.col-1 {
+	#main .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-col.col-1 {
 		width: 46% !important;
 		margin-bottom: 6%;
 	}
-	#main .paragraph:not(.paragraph--type--insert-slideshow):not(.paragraph--type--featured-reports-block.paragraph--id--7) > .paragraph__column .views-view-grid .views-col.col-2 {
+	#main .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-col.col-2 {
 		width: 46% !important;
     	float: right;
 	}
-	#main .paragraph:not(.paragraph--type--insert-slideshow):not(.paragraph--type--featured-reports-block.paragraph--id--7) > .paragraph__column .views-view-grid .views-col.col-3 {
+	#main .paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-col.col-3 {
 		width: 46% !important;
 		clear: both;
 	}
