@@ -40,8 +40,9 @@ jQuery(document).ready(function($) {
 	$('<a id="popup-anchor" href="#" class="visually-hidden">Popup</a>').appendTo('#popup');
 	
 	// Add external link icons
-	$('#block-views-block-news-block-1 .views-col .field-name-title a').append('<span class="fas fa-external-link-alt"></span>')
-	$('#block-views-block-featured-reports-block-1 .views-col .views-field-title a').append('<span class="fas fa-external-link-alt"></span>')
+	$('#block-views-block-news-block-1 .views-col .field-name-title a').append('<span class="fa fa-external-link"></span>')
+	$('#block-views-block-featured-reports-block-1 .views-col .views-field-title a').append('<span class="fa fa-external-link"></span>')
+	$('.path-frontpage .event-title-and-location a').append('<span class="fa fa-external-link"></span>')
 	
 	// Localist markup
 	$('.lw_event_item_title > a').wrap('<h2 class="event-title"></h2>');

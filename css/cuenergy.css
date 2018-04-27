@@ -179,6 +179,52 @@
 	min-height: 0;
 }
 
+/***** Footer *****/
+.eng-logo {
+    background: url(/sites/default/files/inline-images/CE-SingleLine_White_rszd.png) left top no-repeat;
+    background-size: 289px;
+    width: 289px;
+    height: 31px;
+    display: block;
+}
+.eng-logo img {
+    display: none; 
+}
+#footer-second {
+    padding: 37px 15px 40px;
+}
+#footer-second .footer-eng-logo {
+    float: left;
+}
+#footer-second .footer-menu {
+   float: right;
+}
+#footer-second .footer-contact {
+    clear: both;
+}
+@media (max-width: 725px) {
+  .eng-logo {
+      background-size: 270px;
+      width: 270px;
+  }
+}
+@media (max-width: 625px) {
+  #footer-second {
+      text-align: center;
+  }
+  #footer-second .footer-eng-logo {
+      float: none;
+  }
+  #footer-second .footer-menu {
+     float: none;
+  }
+  .eng-logo {
+      background-size: 255px;
+      width: 255px;
+      margin: 0 auto;
+  }
+}
+
 /***** Navigation *****/
 .region-navigation-collapsible {
     height: 100%;
@@ -646,6 +692,12 @@ h4, h5, h6, .h4, .h5, .h6 {
     position: relative;
     top: 1px;
 	margin-right: 6px;
+}
+.fa-external-link {
+	margin-left: 8px;
+}
+.path-frontpage .event-title-and-location a .fa-external-link {
+    font-size: 21px;
 }
 .icon-clocktower-bold {
     font-size: 20px;
