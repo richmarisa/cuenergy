@@ -16,10 +16,6 @@ jQuery(document).ready(function($) {
 			$('#mobile-nav-dimmer').css('display','none');
 		}
 		
-		// Insert more links on home page
-		$('.view-id-news').append('<div class="more-link form-group"><a href="/news-events/news">More news</a></div>');
-		$('.view-id-featured_reports').append('<div class="more-link form-group"><a href="/news-events/news">More reports</a></div>');
-		
 		// Move more links to bottom on mobile
 		if ( $(window).width() <= 630 ) {
 			$('.path-frontpage .more-link').each(function(){
@@ -35,7 +31,11 @@ jQuery(document).ready(function($) {
 	
 	// Fit videos
 	$("#main").fitVids();
-		
+	
+	// Insert more links on home page
+	$('.view-id-news').append('<div class="more-link form-group"><a href="/news-events/news">More news</a></div>');
+	$('.view-id-featured_reports').append('<div class="more-link form-group"><a href="/news-events/news">More reports</a></div>');
+				
 	// Add anchor for broken ARIA reference error. Not a real solution, quick and dirty, but see here: https://github.com/react-bootstrap/react-bootstrap/issues/1827
 	$('<a id="popup-anchor" href="#" class="visually-hidden">Popup</a>').appendTo('#popup');
 	
