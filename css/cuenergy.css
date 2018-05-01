@@ -1289,6 +1289,7 @@ body.path-search input[type="text"] {
 	}
 	#mobile-logo {
 		display: block;
+		overflow: hidden;
 	}
 	#mobile-logo .logo {
 		display: block;
