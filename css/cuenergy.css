@@ -674,9 +674,6 @@ h4, h5, h6, .h4, .h5, .h6 {
 	padding-left: 0;
 }
 /***** Miscellaneous *****/
-.field--type-file .file--application-pdf .file-size {
-	display: none;
-}
 #toolbar-administration,
 #toolbar-administration * {
       font-family: "Source Sans Pro", "Lucida Grande", Verdana, sans-serif !important;
@@ -1479,6 +1476,9 @@ body.path-search input[type="text"] {
 		max-width: none !important;
 		width: auto;
 		margin-left: -20%;
+	}
+	body[class^='path-research'] .region.region-campaign img {
+		margin-left: -60%;
 	}
 }
 @media (max-width: 480px) {
