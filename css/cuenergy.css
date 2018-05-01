@@ -933,6 +933,53 @@ body.path-search input[type="text"] {
 }
 
 /***** Responsive *****/
+
+@media (max-width: 1535px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 500px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-bottom: -5px;
+	}
+}
+@media (max-width: 1235px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 350px;
+	}
+}
+@media (max-width: 1000px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 250px;
+	}
+}
+@media (max-width: 840px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb > li + li:before {
+		padding-right: 10px;
+	}
+}
+@media (max-width: 790px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 230px;
+	}
+}
+@media (max-width: 767px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 440px;
+		margin-bottom: -15px;
+	}
+}
+@media (max-width: 660px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 260px;
+	}
+}
+@media (max-width: 500px) {
+	body.path-research-cornells-commitment-lowering-humanitys-carbon-footprint #breadcrumbs .breadcrumb li.active  {
+		max-width: 120px;
+	}
+}
+
 @media (min-width: 992px) {
 	.container-fluid {
 		max-width: 1280px;
