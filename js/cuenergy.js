@@ -50,9 +50,12 @@ jQuery(document).ready(function($) {
 	if ( $(window).width() <= 752 ) {
 		$('.slider-caption').appendTo($('article .content > div:nth-child(2)'));
 	}
+	//else {
+		//$('.slider-caption').insertAfter($('.slider-container > .next-prev'));
+	//}
 	
 	// align bradcrumbs with content and sidebar
-	var content = $( 'body:not(.path-frontpage) #main > .row > section' );
+	var content = $( '#main > .row > section' );
 	var contentWidth = content.width();
 	var contentOffset = content.offset();
 	var contentOffsetLeft = contentOffset.left;

@@ -1567,6 +1567,10 @@ body.path-search input[type="text"] {
 	.slider-container .next-prev {
 		margin-top: 11vw;
 	}
+	#main article .content > div:nth-child(2) .slider-caption .caption-inner p {
+		font-size: 13px;
+		margin: 0 auto 6px;
+	}
 }
 @media (max-width: 550px) {
 	body:not(.path-frontpage) .region.region-campaign img {
