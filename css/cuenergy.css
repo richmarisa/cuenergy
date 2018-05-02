@@ -708,7 +708,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     font-size: 15px;
     color: #777;
 }
-#main > .row:first-child {
+body:not(.path-frontpage) #main > .row:first-child {
 	max-width: 1280px;
     position: relative;
     margin: 0 auto;
