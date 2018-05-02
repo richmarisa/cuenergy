@@ -16,6 +16,15 @@ jQuery(document).ready(function($) {
 			$('#mobile-nav-dimmer').css('display','none');
 		}
 		
+		// align bradcrumbs with content and sidebar
+		var content = $( 'body:not(.path-frontpage) #main > .row > section' );
+		var contentWidth = content.width();
+		var contentOffset = content.offset();
+		var contentOffsetLeft = contentOffset.left;
+		var windowWidth = $(window).width();
+		$('#breadcrumbs > .col-sm-4').css('width', contentOffsetLeft);
+		$('#breadcrumbs .breadcrumb').css('width', windowWidth - contentOffsetLeft);
+		
 		// Move more links to bottom on mobile
 		if ( $(window).width() <= 630 ) {
 			$('.path-frontpage .more-link').each(function(){
@@ -41,6 +50,15 @@ jQuery(document).ready(function($) {
 	if ( $(window).width() <= 752 ) {
 		$('.slider-caption').appendTo($('article .content > div:nth-child(2)'));
 	}
+	
+	// align bradcrumbs with content and sidebar
+	var content = $( 'body:not(.path-frontpage) #main > .row > section' );
+	var contentWidth = content.width();
+	var contentOffset = content.offset();
+	var contentOffsetLeft = contentOffset.left;
+	var windowWidth = $(window).width();
+	$('#breadcrumbs > .col-sm-4').css('width', contentOffsetLeft);
+	$('#breadcrumbs .breadcrumb').css('width', windowWidth - contentOffsetLeft);
 	
 	// Insert more links on home page
 	$('.path-frontpage .view-id-news').append('<div class="more-link form-group"><a href="/news-events/news">More news</a></div>');

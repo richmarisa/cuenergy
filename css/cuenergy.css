@@ -438,11 +438,14 @@
     padding: 11px 0;
     display: inline-block;
 }
+#breadcrumbs .breadcrumb li a:focus,
+#breadcrumbs .breadcrumb li a:hover {
+    text-decoration: none;
+}
 #breadcrumbs .col-sm-4 {
-    width: 36%;
+
 }
 #breadcrumbs .col-sm-8 {
-    width: 64%;
 	padding-left: 45px;
 }
 
