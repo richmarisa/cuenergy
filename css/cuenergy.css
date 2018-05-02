@@ -1298,13 +1298,14 @@ body.path-search input[type="text"] {
 	}
 	body:not(.path-frontpage) .region.region-campaign section article .field--name-field-header-caption .field--item {
 		font-size: 20px !important;
-		width: 95%!important;
+		width: 100%!important;
 		float: right;
 		margin: 0 auto;
 		text-align: center!important;
 		padding: 12px 10px;
 		bottom: 0!important;
 		background: rgba(0,0,0,.15);
+		right: 0 !important;
 	}
 }
 @media (max-width: 767px) {
@@ -1457,7 +1458,9 @@ body.path-search input[type="text"] {
 	#main article .content > div:nth-child(2) .slider-caption .campaign-nav {
 		display: none;
 	}
-	
+	#breadcrumbs .breadcrumb {
+		width: 100%!important;
+	}
 }
 
 @media (max-width: 630px) {
