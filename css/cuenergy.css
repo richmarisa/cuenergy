@@ -706,7 +706,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     text-transform: uppercase;
     font-family: Helvetica, Arial, "sans-serif";
     font-size: 15px;
-    color: #777;
+    color: #686868;
 }
 body:not(.path-frontpage) #main > .row:first-child {
 	max-width: 1280px;
@@ -1023,13 +1023,13 @@ body.path-search input[type="text"] {
 		font-family: Helvetica, Arial, "sans-serif";
     	padding: 7px 0 7px;
     	font-size: 15px;
-		color: #777;
+		color: #686868;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-field-spotlight-date {
 		text-transform: uppercase;
 		font-family: Helvetica, Arial, "sans-serif";
     	font-size: 15px;
-		color: #777;
+		color: #686868;
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column .views-view-grid .views-field-title {
 
@@ -1293,6 +1293,16 @@ body.path-search input[type="text"] {
 		line-height: 1em !important;
 		right: 3% !important;
 	}
+	body:not(.path-frontpage) .region.region-campaign section article .field--name-field-header-caption .field--item {
+		font-size: 20px !important;
+		width: 95%!important;
+		float: right;
+		margin: 0 auto;
+		text-align: center!important;
+		padding: 12px 10px;
+		bottom: 0!important;
+		background: rgba(0,0,0,.15);
+	}
 }
 @media (max-width: 767px) {
 	.dialog-off-canvas-main-canvas > #main > .row > .col-sm-12 {
@@ -1345,7 +1355,7 @@ body.path-search input[type="text"] {
 	#main article .slider-container .slider-caption .caption-inner .caption-focus p, 
 	.slider-caption p, 
 	.region-campaign .field--name-field-header-caption .field--item {
-		display: none;
+		/*display: none;*/
 	}
 	body:not(.path-frontpage) #main > .row {
 		margin: 0;
@@ -1421,6 +1431,30 @@ body.path-search input[type="text"] {
 		margin: 0 auto;
 		margin-bottom: 12px;
 	}
+	#main article .content > div:nth-child(2) {
+		position: relative;
+		padding-top: 90px;
+		margin-top: -53px;
+	}
+	#main article .content > div:nth-child(2) .slider-caption {
+		height: 60px;
+		background: #205050;
+	}
+	#main article .content > div:nth-child(2) .slider-caption .caption-inner {
+		width: 90%!important;
+		padding: inherit;
+	}
+	#main article .content > div:nth-child(2) .slider-caption .caption-inner p {
+		font-size: 18px;
+		text-align: center!important;
+		width: 100%!important;
+		float: none;
+		margin: 0 auto;
+	}
+	#main article .content > div:nth-child(2) .slider-caption .campaign-nav {
+		display: none;
+	}
+	
 }
 
 @media (max-width: 630px) {

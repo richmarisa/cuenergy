@@ -27,17 +27,30 @@ jQuery(document).ready(function($) {
 				$(this).appendTo($(this).prev('.view'));
 			});		
 		}
+		
+		// Move header captions on mobile
+		if ( $(window).width() <= 752 ) {
+			$('.slider-caption').appendTo($('article .content > div:nth-child(2)'));
+		}
 	}
 	
 	// Fit videos
-	$("#main").fitVids();
+	$('#main').fitVids({ customSelector: "iframe[src^='https://cdnapisec.kaltura.com']"});
+	
+	// Move header captions on mobile
+	if ( $(window).width() <= 752 ) {
+		$('.slider-caption').appendTo($('article .content > div:nth-child(2)'));
+	}
 	
 	// Insert more links on home page
 	$('.path-frontpage .view-id-news').append('<div class="more-link form-group"><a href="/news-events/news">More news</a></div>');
 	$('.path-frontpage .view-id-featured_reports').append('<div class="more-link form-group"><a href="/news-events/news">More reports</a></div>');
-				
+	
 	// Add anchor for broken ARIA reference error. Not a real solution, quick and dirty, but see here: https://github.com/react-bootstrap/react-bootstrap/issues/1827
 	$('<a id="popup-anchor" href="#" class="visually-hidden">Popup</a>').appendTo('#popup');
+	
+	// ...and another
+	$('.view-id-people > nav h4').attr('id', 'pagination-heading');
 	
 	// Add external link icons
 	$('#block-views-block-news-block-1 .views-col .field-name-title a').append('<span class="fa fa-external-link"></span>')
