@@ -14,11 +14,15 @@
   <div class="col-sm-4"></div>
   <ol class="breadcrumb col-sm-8">
     {% for item in breadcrumb %}
+ 	  {% set bc = item.text %}
+      {% if 'Commitment' in bc %}
+        {% set bc = 'Cornell Sustainability' %}
+      {% endif %}	
       <li {{ item.attributes }}>
         {% if item.url %}
-          <a href="{{ item.url }}">{{ item.text }}</a>
+          <a href="{{ item.url }}">{{ bc }}</a>
         {% else %}
-          {{ item.text }}
+          {{ bc }}
         {% endif %}
       </li>
     {% endfor %}
