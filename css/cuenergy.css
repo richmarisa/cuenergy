@@ -180,6 +180,9 @@
     padding-right: 15px !important;
 	max-width: 1280px !important;
 }
+#cu-header .container-fluid .buttons {
+    right: 60px;
+}
 .dialog-off-canvas-main-canvas > #main > .row > .col-sm-12 {
 	min-height: 0;
 }
@@ -414,7 +417,8 @@
 }
 .breadcrumb > li + li:before {
     content: "> ";
-	padding-right: 40px;
+	color: #ffffff !important;
+	padding-right: 15px;
 }
 #breadcrumbs .breadcrumb li {
     margin-bottom: 0;
@@ -422,15 +426,15 @@
 #breadcrumbs .breadcrumb li.active {
     font-size: 17px;
     text-transform: uppercase;
-    color: #b4cebd;
+    color: #ffffff;
 	font-family: Helvetica, Arial, "sans-serif";
 }
 #breadcrumbs .breadcrumb li a {
     font-size: 17px;
     text-transform: uppercase;
 	font-family: Helvetica, Arial, "sans-serif";
-    color: #b4cebd;
-    text-decoration: none;
+    color: #ffffff;
+    text-decoration: underline;
     padding: 11px 0;
     display: inline-block;
 }
@@ -485,7 +489,6 @@ nav.tabs {
 }
 #main .region-sidebar-first {
     overflow: hidden;
-    width: 60%;
     float: right;
 }
 #main .region-sidebar-first ul {
@@ -705,6 +708,12 @@ h4, h5, h6, .h4, .h5, .h6 {
     font-size: 15px;
     color: #777;
 }
+#main > .row:first-child {
+	max-width: 1280px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .fa {
     position: relative;
     top: 1px;
@@ -811,7 +820,7 @@ label, .btn, .navbar {
     padding-top: 0;
 }
 body:not(.path-frontpage) #main {
-    background: #f5f7fa;
+    background: #ffffff;
 	width: 100%;
     max-width: none;
     padding-left: 0;
@@ -823,9 +832,9 @@ body:not(.path-frontpage) #main > .row {
     width: 100%;
 }
 body:not(.path-frontpage) #main > .row aside {
-    margin-left: 15px;
-	padding: 56px 0 56px 15px;
-	width: 36%;
+    margin-left: 0;
+    padding: 56px 0 56px 26px;
+    background: #f7f8fb;
 }
 body:not(.path-frontpage) #main > .row > section {
     width: calc(64% - 15px) !important;
@@ -994,8 +1003,8 @@ body.path-search input[type="text"] {
 		float: right;
 	}
 	body:not(.path-frontpage) #main > .row > section {
-		width: 66.66667%;
-		float: right;
+		/*width: 66.66667%;
+		float: right;*/
 	}
 	.paragraph:not(.paragraph--type--insert-slideshow) > .paragraph__column {
 		float: none;
@@ -1076,7 +1085,7 @@ body.path-search input[type="text"] {
 
 @media (max-width: 1180px) {
 	#main .region-sidebar-first {
-		width: 72%;
+
 	}
 }
 @media (max-width: 1160px) {
@@ -1127,6 +1136,9 @@ body.path-search input[type="text"] {
 	}
 }
 @media (max-width: 1080px) {
+	#main > .row > aside {
+		width: 37%;
+	}
 	.path-frontpage .paragraph.paragraph--type--bp-columns-two-uneven.paragraph--style--33-66 .paragraph--type--bp-columns-two-uneven__2col-column1 * {
 		width: 100%;
 	}
@@ -1187,7 +1199,7 @@ body.path-search input[type="text"] {
 		line-height: 23px;
 	}
 	#main .region-sidebar-first {
-		width: 77%;
+
 	}
 }
 @media (max-width: 895px) {
