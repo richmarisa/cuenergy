@@ -372,8 +372,12 @@
 .views-row.people-listing .views-field.views-field-body {
 	margin-top: 5px;
 }
-
-
+.path-people-faculty-experts .views-row.people-listing {
+	line-height: 28px; 
+}
+.read-more-text {
+	display: none;
+}
 /***** Discover *****/
 .paragraph.paragraph--id--7 > .paragraph__column .views-view-grid .views-col {
     position: relative;
@@ -462,7 +466,7 @@ nav.tabs {
     float: left;
 }
 .views-field-body .views-field {
-    width: calc(100% - 222px);
+    width: calc(100% - 180px);
     float: right;
 }
 
@@ -524,6 +528,11 @@ nav.tabs {
 }
 .closed {
 	display: none !important;
+}
+@media (min-width: 768px) {
+	body:not(.path-frontpage) #main > .row aside.col-sm-4 {
+		width: 30% !important;
+	}
 }
 
 /***** Events *****/
@@ -838,9 +847,10 @@ body:not(.path-frontpage) #main > .row aside {
     margin-left: 0;
     padding: 56px 0 56px 26px;
     background: #f7f8fb;
+	width: 30%;
 }
 body:not(.path-frontpage) #main > .row > section {
-    width: calc(64% - 15px) !important;
+    width: calc(69% - 15px) !important;
     background: #fff;
     padding: 50px 47px;
 }

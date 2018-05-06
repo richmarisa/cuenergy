@@ -96,6 +96,19 @@ jQuery(document).ready(function($) {
 		});		
 	}
 	
+	// Read more people
+	$('.read-more-label').click(function(e) {
+		e.preventDefault();
+		$(this).parent().prev('.read-more-text').slideToggle('medium');
+		$(this).toggleClass('read-more-label read-more-label-close');
+		if( $(this).hasClass('read-more-label') ) {
+			$(this).text('Read more...');
+	    }
+		else {
+			$(this).text('Close');
+		}
+	});
+		
 	// Remove dash from empty CESI titles
 	$('.views-label.views-label-cesi-title').each(function(){
 		if ( $(this).length == 0 ) {
