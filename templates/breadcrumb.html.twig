@@ -11,8 +11,7 @@
 #}
 {% if breadcrumb %}
 <div id="breadcrumbs">
-  <div class="col-sm-4"></div>
-  <ol class="breadcrumb col-sm-8">
+  <ol class="breadcrumb">
     {% for item in breadcrumb %}
  	  {% set bc = item.text %}
       {% if 'Commitment' in bc %}

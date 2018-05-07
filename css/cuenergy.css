@@ -416,8 +416,10 @@
     padding-top: 0px;
     margin-bottom: 0;
     padding-bottom: 0;
+	width: 63.12%;
     height: 100%;
     background: #2b7545;
+	float: right;
 }
 .breadcrumb > li + li:before {
     content: "> ";
