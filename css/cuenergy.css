@@ -407,27 +407,36 @@
 
 /***** Breadcrumbs *****/
 #breadcrumbs {
-    min-height: 46px;
+    height: 46px;
     background: #205050;
+}
+#breadcrumbs * {
+    height: 46px;
 }
 #breadcrumbs .breadcrumb {
     border-radius: 0;
     margin-top: 0;
-    padding-top: 0px;
+    padding-top: 0;
+	padding-left: 45px;
     margin-bottom: 0;
     padding-bottom: 0;
 	width: 63.12%;
-    height: 100%;
     background: #2b7545;
 	float: right;
 }
 .breadcrumb > li + li:before {
     content: "> ";
 	color: #ffffff !important;
+	padding-left: 10px;
 	padding-right: 15px;
+	padding-bottom: 2px;
+	display: table-cell;
+    vertical-align: middle;
 }
 #breadcrumbs .breadcrumb li {
     margin-bottom: 0;
+	display: table;
+    float: left;
 }
 #breadcrumbs .breadcrumb li.active {
     font-size: 17px;
@@ -435,24 +444,22 @@
     color: #ffffff;
 	font-family: Helvetica, Arial, "sans-serif";
 }
+#breadcrumbs .breadcrumb li.active span {
+    display: table-cell;
+    vertical-align: middle;
+}
 #breadcrumbs .breadcrumb li a {
     font-size: 17px;
     text-transform: uppercase;
 	font-family: Helvetica, Arial, "sans-serif";
     color: #ffffff;
     text-decoration: underline;
-    padding: 11px 0;
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
 }
 #breadcrumbs .breadcrumb li a:focus,
 #breadcrumbs .breadcrumb li a:hover {
     text-decoration: none;
-}
-#breadcrumbs .col-sm-4 {
-
-}
-#breadcrumbs .col-sm-8 {
-	padding-left: 45px;
 }
 
 /***** Tabs *****/
