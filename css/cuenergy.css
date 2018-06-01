@@ -505,7 +505,6 @@ nav.tabs {
 }
 #main .region-sidebar-first {
     overflow: hidden;
-    float: right;
 }
 #main .region-sidebar-first ul {
     width: 100%;

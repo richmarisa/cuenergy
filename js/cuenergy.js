@@ -59,6 +59,9 @@ jQuery(document).ready(function($) {
 	$('.region-sidebar-first #block-mainnavigation #block-mainnavigation-menu').html(function(index,html){
 		return html.replace('news-events','News & Events');
 	});
+	$('.region-sidebar-first #block-mainnavigation #block-mainnavigation-menu').html(function(index,html){
+		return html.replace('-',' ');
+	});
 	$('.region-sidebar-first #block-mainnavigation #block-mainnavigation-menu').addClass('all-caps');
 	$('.region-sidebar-first #block-mainnavigation > ul').addClass('menu menu--main nav navbar-nav');
 	$('.region-sidebar-first #block-mainnavigation > ul li .is-active').parent('li').addClass('active');
