@@ -54,6 +54,18 @@ jQuery(document).ready(function($) {
 		//$('.slider-caption').insertAfter($('.slider-container > .next-prev'));
 	//}
 	
+	
+	
+	$('.region-sidebar-first #block-mainnavigation #block-mainnavigation-menu').html(function(index,html){
+		return html.replace('news-events','News & Events');
+	});
+	$('.region-sidebar-first #block-mainnavigation #block-mainnavigation-menu').addClass('all-caps');
+	$('.region-sidebar-first #block-mainnavigation > ul').addClass('menu menu--main nav navbar-nav');
+	$('.region-sidebar-first #block-mainnavigation > ul li .is-active').parent('li').addClass('active');
+	
+	
+	
+	
 	// align bradcrumbs with content and sidebar
 	var content = $( '#main > .row > section' );
 	var contentWidth = content.width();
@@ -154,7 +166,7 @@ jQuery(document).ready(function($) {
 	             break;
 	     }
 		});
-
+		
 	});
 	
 });

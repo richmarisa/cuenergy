@@ -9,6 +9,7 @@
  * @ingroup templates
  */
 #}
+
 {% if breadcrumb %}
 <div id="breadcrumbs">
   <ol class="breadcrumb">
@@ -21,7 +22,7 @@
         {% if item.url %}
           <a href="{{ item.url }}">{{ bc }}</a>
         {% else %}
-          {{ bc }}
+          <span class="current-page-text">{{ bc }}</span>
         {% endif %}
       </li>
     {% endfor %}
