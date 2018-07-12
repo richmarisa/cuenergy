@@ -74,7 +74,10 @@
 #}
 <article{{ attributes }}>
 
-  <div class="slider-container" id="slider{{ node.id }}"><div class="slider-caption" id="slider-headline{{ node.id }}"></div></div>
+   <div class="slider-container" id="slider{{ node.id }}">
+  	<div class="slider-caption" id="slider-headline{{ node.id }}"></div>
+	<div class="photo-credits" id="photo-credits{{ node.id }}"></div>
+  </div>
   <script>
     if (global_slider_count != undefined) {
       global_slider_count++;
@@ -87,6 +90,6 @@
 
   {{ content }}
 
-  <script>cwd_slider('#slider{{ node.id }}','#slider-headline{{ node.id }}',8,1,true,false);</script>
+  <script>cwd_slider('#slider{{ node.id }}','#slider-headline{{ node.id }}','#photo-credits{{ node.id }}',8,1,true,false);</script>
 
 </article>

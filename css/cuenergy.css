@@ -186,6 +186,13 @@
 .dialog-off-canvas-main-canvas > #main > .row > .col-sm-12 {
 	min-height: 0;
 }
+.path-frontpage .slider-container.slider {
+	border-top: 4px solid #fff;
+}
+article.header-image .content .field--name-field-media-image {
+	border-top: 3px solid #fff;
+    border-bottom: 2px solid #fff;
+}
 
 /***** Footer *****/
 .eng-logo {
@@ -372,8 +379,12 @@
 .views-row.people-listing .views-field.views-field-body {
 	margin-top: 5px;
 }
+.views-row.people-listing {
+    border-bottom: 1px solid #e4e5ec;
+    margin-bottom: 16px;
+}
 .path-people-faculty-experts .views-row.people-listing {
-	line-height: 28px; 
+
 }
 .read-more-text {
 	display: none;
@@ -525,6 +536,7 @@ nav.tabs {
 }
 #main .region-sidebar-first #block-mainnavigation {
 	padding-bottom: 34px;
+	z-index: 9;
 }
 #main .region-sidebar-first #block-mainnavigation ul li ul {
 	list-style: none;
