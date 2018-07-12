@@ -574,13 +574,13 @@ nav.tabs {
 }
 
 /***** Events *****/
-.path-news-events-news #block-views-block-news-block-2 .view-content .views.cwd-component {
+.path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component {
 	margin-bottom: 36px;
 }
-.path-news-events-news #block-views-block-news-block-2 .view-content .views.cwd-component h2 {
+.path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component h2 {
 	margin-bottom: 6px;
 }
-.path-news-events-news #block-views-block-news-block-2 .view-content .views.cwd-component h2 a {
+.path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component h2 a {
 	font-size: 24px;
 }
 .path-news-events-college-engineering-events #main > .row > section h2 {
@@ -1479,7 +1479,7 @@ body.path-search input[type="text"] {
 	.news-events-page-grid > div {
 		line-height: 28px;
 	}
-	.path-news-events-news #block-views-block-news-block-2 .view-content .views.cwd-component a img {
+	.path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component a img {
 		margin: 0 auto;
 		margin-bottom: 12px;
 	}
