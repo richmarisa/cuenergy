@@ -186,13 +186,6 @@
 .dialog-off-canvas-main-canvas > #main > .row > .col-sm-12 {
 	min-height: 0;
 }
-.path-frontpage .slider-container.slider {
-	border-top: 4px solid #fff;
-}
-article.header-image .content .field--name-field-media-image {
-	border-top: 3px solid #fff;
-    border-bottom: 2px solid #fff;
-}
 
 /***** Footer *****/
 .eng-logo {
@@ -574,12 +567,15 @@ nav.tabs {
 }
 
 /***** Events *****/
+.path-news-events-featured-reports .view-display-id-more_featured_reports .view-content .views-field,
 .path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component {
 	margin-bottom: 36px;
 }
+.path-news-events-featured-reports .view-display-id-more_featured_reports .view-content .views-field h2,
 .path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component h2 {
 	margin-bottom: 6px;
 }
+.path-news-events-featured-reports .view-display-id-more_featured_reports .view-content .views-field h2 a,
 .path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component h2 a {
 	font-size: 24px;
 }
@@ -1440,10 +1436,10 @@ body.path-search input[type="text"] {
 	#footer-second .text-align-right {
 		text-align: left;
 	}
-	#breadcrumbs {
+	/*#breadcrumbs {
 		height: unset;
 		min-height: 39px;
-	}
+	}*/
 	#breadcrumbs .col-sm-8 {
 		width: 100%;
 		padding-left: 31px;
@@ -1454,14 +1450,14 @@ body.path-search input[type="text"] {
 	#breadcrumbs .breadcrumb li.active,
 	#breadcrumbs .breadcrumb li a {
 		font-size: 14px;
-		padding: 11px 0 9px;
+		/*padding: 11px 0 9px;*/
 	}
 	.breadcrumb > li + li:before {
 		content: "> ";
 		padding-right: 5px;
 	}
 	body:not(.path-frontpage) .region.region-campaign {
-		overflow: hidden;
+		/*overflow: hidden;*/
 		max-height: 238px;
 	}
 	body:not(.path-frontpage) .region.region-campaign img {
@@ -1479,6 +1475,7 @@ body.path-search input[type="text"] {
 	.news-events-page-grid > div {
 		line-height: 28px;
 	}
+	.path-news-events-featured-reports .view-display-id-more_featured_reports .view-content .views-field a img,
 	.path-news-events-cu-energy-news #block-views-block-news-block-2 .view-content .views.cwd-component a img {
 		margin: 0 auto;
 		margin-bottom: 12px;
