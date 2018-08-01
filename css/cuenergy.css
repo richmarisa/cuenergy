@@ -548,8 +548,8 @@ nav.tabs {
 #block-webform {
 	padding: 15px 60px 24px 0;
 }
-.webform-submission-contact-add-form > label,
-.webform-submission-energy-seminar-notification-form > label {
+.webform-submission-contact-add-form > div,
+.webform-submission-energy-seminar-notification-form > div {
     font-size: 19px;
     line-height: 1.4em;
     margin-bottom: 16px;

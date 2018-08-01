@@ -54,7 +54,11 @@ jQuery(document).ready(function($) {
 		//$('.slider-caption').insertAfter($('.slider-container > .next-prev'));
 	//}
 	
+	var contactFormLabel = $('label[for="edit-to-contact-the-energy-systems-institute-please-complete-the-foll"]').text();
+	$('label[for="edit-to-contact-the-energy-systems-institute-please-complete-the-foll"]').replaceWith($('<div>' + contactFormLabel + '</div>'));
 	
+	var seminarFormLabel = $('label[for="edit-get-weekly-email-notice-for-the-next-energy-seminar"]').text();
+	$('label[for="edit-get-weekly-email-notice-for-the-next-energy-seminar"]').replaceWith($('<div>' + seminarFormLabel + '</div>'));
 	
 	$('.region-sidebar-first #block-mainnavigation #block-mainnavigation-menu').html(function(index,html){
 		return html.replace('news-events','News & Events');
